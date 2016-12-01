@@ -2,13 +2,16 @@ import React, { PropTypes, Component } from 'react'
 import ProfileList from '../components/ProfileList'
 import Message from '../components/Message'
 
+// ProfileListContainer handles state and async actions for ProfileList.
 class ProfileListContainer extends Component {
   constructor() {
     super()
     this.state = {
       // Contains data from initial api call.
       list: [],
+      // Is set to true if awaiting api response, false otherwise.
       isLoading: false,
+      // Set to an error message if exception occurs
       error: null
     }
   }

@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react'
 import MemberListItem from './MemberListItem'
 import { ListGroup } from 'react-bootstrap'
 
+// MemberList is a ListGroup of MemberListItems.
 const MemberList = ({ members, setSelectedMember, ...rest}) => {
   return (
     <ListGroup>

@@ -3,6 +3,7 @@ import ProfileInfo from './ProfileInfo'
 import ProfileListContainer from '../containers/ProfileListContainer'
 import { Col, Row, Image } from 'react-bootstrap'
 
+// Profile displays the information of the currently selected user.
 const Profile = ({ user }) => {
   const {repos_url, organizations_url, subscriptions_url, name, login, email, location,
     created_at, followers} = user

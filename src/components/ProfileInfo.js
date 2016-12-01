@@ -4,6 +4,7 @@ import { Col, Row, Glyphicon } from 'react-bootstrap'
 import dateFormat from 'dateformat'
 import '../css/ProfileInfo.css'
 
+// Displays currently selected user's email, location, join date, and follower count.
 const ProfileInfo = ({email, location, createdAt, followers, ...rest}) => (
   <Col sm={12} className="profile-info">
     <Row>

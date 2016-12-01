@@ -7,11 +7,18 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
+      // Holds the id of the member that is currently selected in the left menu.
+      // Is set to null if no member is selected
       selectedMemberId: null,
+
+      // Contains the github user url of the selected member
       selectedMemberUrl: null,
     }
   }
 
+  // Sets selectedMemberId and selectedMemberUrl to the currently selected member.
+  // It's curried so it can select the members array from MembersList and the
+  // id from MemberListItem.
   setSelectedMember = (members) => (id) => {
     const selectedMember = members.find(member => member.id === id)
     if(selectedMember){
